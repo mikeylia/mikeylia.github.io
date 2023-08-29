@@ -30,7 +30,7 @@ document.body.innerHTML += `
   <div class="text"><img class="ui avatar image" src="https://gartic.io/static/images/avatar/svg/0.svg">Default</div>
   <div class="menu transition hidden" tabindex="-1">
   <div data-value="0" class="item active selected">
-        <img class="ui avatar image" src="https://gartic.io/static/images/avatar/svg/0.svg">Default</div><div data-value="1" class="item">
+        <img class="ui avatar image" src="https://cdn.discordapp.com/avatars/249476736801046528/63deaa588d7da24a189c27c321d38513.png">Default</div><div data-value="1" class="item">
         <img class="ui avatar image" src="https://gartic.io/static/images/avatar/svg/1.svg">Man 1</div><div data-value="2" class="item">
         <img class="ui avatar image" src="https://gartic.io/static/images/avatar/svg/2.svg">Man 2</div><div data-value="3" class="item">
         <img class="ui avatar image" src="https://gartic.io/static/images/avatar/svg/3.svg">Man 3</div><div data-value="4" class="item">
