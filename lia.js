@@ -27,7 +27,7 @@ document.body.innerHTML += `
 <div class="ui fluid selection profil bot-image dropdown" tabindex="0">
   <input type="hidden" name="user">
   <i class="dropdown icon" tabindex="0"><div class="menu" tabindex="-1"></div></i>
-  <div class="text"><img class="ui avatar image" src="https://gartic.io/static/images/avatar/svg/0.svg">Default</div>
+  <div class="text"><img class="ui avatar image" src="https://media.tenor.com/o5zlBIxwTDMAAAAd/manjiro-sano-kazutora-hanemiya.gif">Default</div>
   <div class="menu transition hidden" tabindex="-1">
   <div data-value="0" class="item active selected">
         <img class="ui avatar image" src="https://gartic.io/static/images/avatar/svg/0.svg">Default</div><div data-value="1" class="item">
