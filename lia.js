@@ -1094,9 +1094,9 @@ function waitRandomSeconds() {
 
 let cooldowns = {};
 let messageSent = false;
-let rejoin = false;
-let warningMessage = true;
-let warningSound = true;
+let rejoin = true;
+let warningMessage = false;
+let warningSound = false;
 btn.addEventListener('click', function () {
   proxylist = JSON.parse(localStorage.getItem("proxies"));
   filterPeople = people;
