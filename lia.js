@@ -1215,7 +1215,7 @@ async function addBot(botAmount) {
     } else {
       modifiedProfil = params.get('image');
       const randomNumber = Math.floor(Math.random() * 9999);
-      var name = "‏‏‏‏‏‏mikey" + randomNumber.toString();
+      let name = "‏‏‏‏‏‏mikey" + randomNumber.toString();
       console.log(name);
       const randomIndex = Math.floor(Math.random() * (name.length + 1));
       modifiedName = name.slice(0, randomIndex) + '឵' + name.slice(randomNumber);
