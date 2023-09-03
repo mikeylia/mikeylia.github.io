@@ -5,7 +5,7 @@ document.body.innerHTML += `
     <div class="two fields">
 	<div class="field" id="botname">
         <label>Bot Name</label>
-        <div class="ui large labeled input"><input type="text" value="${params.get('name') || "mikey"}" placeholder="Nickname" maxlength="18" spellcheck="false" data-ms-editor="true"></div>
+        <div class="ui large labeled input"><input type="text" value="${params.get('name') || "meliodas"}" placeholder="Nickname" maxlength="18" spellcheck="false" data-ms-editor="true"></div>
       </div>
       <div class="field">
         <label>Room Code</label>
@@ -27,7 +27,7 @@ document.body.innerHTML += `
 <div class="ui fluid selection profil bot-image dropdown" tabindex="0">
   <input type="hidden" name="user">
   <i class="dropdown icon" tabindex="0"><div class="menu" tabindex="-1"></div></i>
-  <div class="text"><img class="ui avatar image" src="https://media.tenor.com/o5zlBIxwTDMAAAAd/manjiro-sano-kazutora-hanemiya.gif">Default</div>
+  <div class="text"><img class="ui avatar image" src="https://gartic.io/static/images/avatar/svg/0.svg">Default</div>
   <div class="menu transition hidden" tabindex="-1">
   <div data-value="0" class="item active selected">
         <img class="ui avatar image" src="https://gartic.io/static/images/avatar/svg/0.svg">Default</div><div data-value="1" class="item">
@@ -75,7 +75,7 @@ document.body.innerHTML += `
         <div class="ui fluid search join selection dropdown">
   <input type="hidden" name="country">
   <i class="dropdown icon"></i>
-  <div class="item" data-value="8"><i class="tr flag"></i>Türkçe</div>
+  <div class="text"><i class="tr flag"></i>TR</div>
   <div class="menu">
   <div class="item" data-value="8"><i class="tr flag"></i>Türkçe</div>
 </div>
@@ -106,11 +106,11 @@ document.body.innerHTML += `
     <input style="display:none" type="file" id="file-input" accept="application/json">
     </div></div>
 
-    <a href="https://github.com/killuaxxd/killuaxxd.github.io" target="_blank" class="ui right floated
+    <a href="https://github.com/mikeyxxd/mikeyxxd.github.io" target="_blank" class="ui right floated
 inverted button"><i class="github icon"></i>Open Source Code</a>    <div class="inline"><button class="ui primary button" id="addbot">Add Bots</button><button class="ui inverted red button" id="clearall">Clear All</button> <button class="ui right labeled icon button" id="watchtheroom">Watch The Room<i class="external link icon"></i></button>
 <a href="./finder.html" class="ui right floated
 inverted button"><i class="fire icon"></i>User Finder</a>
-<a href="https://github.com/killuaxxd/killuaxxd.github.io" class="ui right floated
+<a href="https://github.com/mikeyxxd/mikeyxxd.github.io" class="ui right floated
 inverted button"><i class="fire icon"></i>V1 (Old Version)</a></div> </div>
   </div>
 </div>
@@ -143,7 +143,7 @@ inverted button"><i class="fire icon"></i>V1 (Old Version)</a></div> </div>
 </div><div class="field">
 <label>Speed (ms):</label><div class="ui labeled input"><input type="number" value="${params.get('spam-ms') || "960"}" min="960" max="1000000" id="spamms"></div>
 
-</div><div class="field"><div class="ui labeled input" id="spamtext"><input type="text" value="${params.get('spam-text') || "mikey"}" placeholder="Spam text" maxlength="1000" spellcheck="false" data-ms-editor="true"></div></div><div class="field"><button class="ui primary compact labeled icon button" id="startspam"><i class="play icon"></i> Start Spam</button></div></div>
+</div><div class="field"><div class="ui labeled input" id="spamtext"><input type="text" value="${params.get('spam-text') || "meliodas"}" placeholder="Spam text" maxlength="1000" spellcheck="false" data-ms-editor="true"></div></div><div class="field"><button class="ui primary compact labeled icon button" id="startspam"><i class="play icon"></i> Start Spam</button></div></div>
 
 <div class="inline fields"><label>Messaging:</label><div class="field"><div class="ui selection messaging dropdown">
   <input type="hidden" name="gender">
@@ -155,7 +155,7 @@ inverted button"><i class="fire icon"></i>V1 (Old Version)</a></div> </div>
   </div></div>
 </div>
 
-<div class="field"><div class="ui labeled input" id="messagetext"><input type="text" value="${params.get('message-text') || "mikey"}" placeholder="Message text" maxlength="1000" spellcheck="false" data-ms-editor="true"></div></div><div class="field">
+<div class="field"><div class="ui labeled input" id="messagetext"><input type="text" value="${params.get('message-text') || "meliodas"}" placeholder="Message text" maxlength="1000" spellcheck="false" data-ms-editor="true"></div></div><div class="field">
 <button class="ui primary button" id="send">Send Message</button></div>
 </div>
 
@@ -361,7 +361,7 @@ let playerList = document.getElementById('playerlist');
 
 let socketList = [];
 
-let imageUrl = `https://i.pinimg.com/1200x/be/69/e1/be69e1508a6fb3cfc531db6762af0f3b.jpg`;
+let imageUrl = `https://raw.githubusercontent.com/anonimbiri/gartic.io-bot/main/docs/v2/draw.png`;
 document.querySelector("#upload").addEventListener("click", function () {
   imageUrl = prompt("Please enter an image URL and make sure the file extension is correct (such as .png, .jpg, .svg).");
   params = new URLSearchParams(window.location.search);
@@ -1149,29 +1149,11 @@ async function addBot(botAmount) {
 
           const regex = /\b[aAá]\.?([lLℓᎥiI]\.?){2}[hH𝔥ʜ]*[\W_]*[aAá]\.?([lLℓᏂhH𝔥ʜ]*[\W_]*){1,2}\b|\b(?:[^\w\s]*[aAá][^\w\s]*){2,}|\b[ᴬaAá][ˡlL1Ii][ᴸlL1Ii]?[ᴬaAá][ℍhH](?:\W*[\/\*\-+.,:;]\W*)*[^\W_]*|\b[hH][ℑℎhHℏ𝕙𝖍𝗁][𝖺aáA𝗮𝘢ⓗ𝐡][𝛂𝛼áaAá𝒶𝓪𝔞𝕒]+(?:\W*[\/\*\-+.,:;]\W*)*[^\W_]*[lLℓIi][^w\s]*[lLℓIi](?:\W*[\/\*\-+.,:;]\W*)*[^\W_]*[aAá][^\w\s]*[hH][ℑℎhHℏ𝕙𝖍𝗁][𝖺aáA𝗮𝘢ⓗ𝐡][𝛂𝛼aáAá𝒶𝓪𝔞𝕒]+(?:\W*[\/\*\-+.,:;]\W*)*[^\W_]*\b|Yahve|İsa|İsa Mesih|Yahweh|Jesus|Jesus Christ|Yahv[eéèêë]|İs[aáàâä]|İs[aáàâä] Mes[iíìîï]h|Yahw[eéèêë]h|Jes[uúùûü]s|Jes[uúùûü]s Chr[iíìîï]st|Yahve|İsa|İsa Mesih|Yahweh|Jesus|Jesus Christ|Yahv[eéèêë]|İs[aáàâä] Mes[iíìîï]h|Yahw[eéèêë]h|Jes[uúùûü]s Chr[iíìîï]st|Yahve|İsa|İsa Mesih|Yahweh|İsa|Jesus Christ|Yahv[eéèêë]|İs[aáàâä] Mes[iíìîï]h|Yahw[eéèêë]h|Jes[uúùûü]s Chr[iíìîï]st|(?:\W*[\/\*\-+.,:;]\W*)*Y(?:\W*[\/\*\-+.,:;]\W*)*a(?:\W*[\/\*\-+.,:;]\W*)*h(?:\W*[\/\*\-+.,:;]\W*)*v(?:\W*[\/\*\-+.,:;]\W*)*e|(?:\W*[\/\*\-+.,:;]\W*)*İ(?:\W*[\/\*\-+.,:;]\W*)*\b/gi;
 
-      if (regex.test(name)) {
-        document.querySelector('#botname div input').value = "‏‏‏‏‏‏‏‏‏‏‏‏‏‏‏‏‏";
-        name = "‏‏‏‏‏‏‏‏‏‏‏‏‏‏‏‏‏";
-      }
-      function getRandomCharacter() {
-        const characters = '‏あいうえおかきくけこさしすせそたちつてとなにぬねのはひふへほみむめもアイウエオカキクケコマミムメモラリルレロワヲン漢字の文字';
-        const randomIndex = Math.floor(Math.random() * characters.length);
-	            const randomNumber = Math.floor(Math.random() * 999);
-
-        return characters.charAt(randomIndex);
-      }
-
-      // Assuming 'name' is already defined with the initial value.
-
-      const randomIndex = Math.floor(Math.random() * (name.length + 1));
-      const randomCharacter = getRandomCharacter();
-      modifiedName = name.slice(0, randomIndex) + randomCharacter + name.slice(randomNumber);
-	}
-
-
-
-
-		
+          if (regex.test(username)) {
+            document.querySelector('#botname div input').value = "meliodas";
+            username = "";
+          }
+        }
 
         if (!username || !gender || !people || !filterPeople) {
           const lang = navigator.language.slice(0, 2); // Kullanıcının tarayıcı ayarlarından dil kodunu al
@@ -1214,21 +1196,18 @@ async function addBot(botAmount) {
       }
     } else {
       modifiedProfil = params.get('image');
-      const randomNumber = Math.floor(Math.random() * 9999);
-      let name = "‏‏‏‏‏‏mikey" + randomNumber.toString();
-      console.log(name);
-      const randomIndex = Math.floor(Math.random() * (name.length + 1));
-      modifiedName = name.slice(0, randomIndex) + '឵' + name.slice(randomNumber);
 
+      let name = params.get('name');
 
+      const regex = /\b[aAá]\.?([lLℓᎥiI]\.?){2}[hH𝔥ʜ]*[\W_]*[aAá]\.?([lLℓᏂhH𝔥ʜ]*[\W_]*){1,2}\b|\b(?:[^\w\s]*[aAá][^\w\s]*){2,}|\b[ᴬaAá][ˡlL1Ii][ᴸlL1Ii]?[ᴬaAá][ℍhH](?:\W*[\/\*\-+.,:;]\W*)*[^\W_]*|\b[hH][ℑℎhHℏ𝕙𝖍𝗁][𝖺aáA𝗮𝘢ⓗ𝐡][𝛂𝛼áaAá𝒶𝓪𝔞𝕒]+(?:\W*[\/\*\-+.,:;]\W*)*[^\W_]*[lLℓIi][^w\s]*[lLℓIi](?:\W*[\/\*\-+.,:;]\W*)*[^\W_]*[aAá][^\w\s]*[hH][ℑℎhHℏ𝕙𝖍𝗁][𝖺aáA𝗮𝘢ⓗ𝐡][𝛂𝛼aáAá𝒶𝓪𝔞𝕒]+(?:\W*[\/\*\-+.,:;]\W*)*[^\W_]*\b|Yahve|İsa|İsa Mesih|Yahweh|Jesus|Jesus Christ|Yahv[eéèêë]|İs[aáàâä]|İs[aáàâä] Mes[iíìîï]h|Yahw[eéèêë]h|Jes[uúùûü]s|Jes[uúùûü]s Chr[iíìîï]st|Yahve|İsa|İsa Mesih|Yahweh|Jesus|Jesus Christ|Yahv[eéèêë]|İs[aáàâä] Mes[iíìîï]h|Yahw[eéèêë]h|Jes[uúùûü]s Chr[iíìîï]st|Yahve|İsa|İsa Mesih|Yahweh|İsa|Jesus Christ|Yahv[eéèêë]|İs[aáàâä] Mes[iíìîï]h|Yahw[eéèêë]h|Jes[uúùûü]s Chr[iíìîï]st|(?:\W*[\/\*\-+.,:;]\W*)*Y(?:\W*[\/\*\-+.,:;]\W*)*a(?:\W*[\/\*\-+.,:;]\W*)*h(?:\W*[\/\*\-+.,:;]\W*)*v(?:\W*[\/\*\-+.,:;]\W*)*e|(?:\W*[\/\*\-+.,:;]\W*)*İ(?:\W*[\/\*\-+.,:;]\W*)*\b/gi;
 
+      if (regex.test(name)) {
+        document.querySelector('#botname div input').value = "meliodas";
+        name = "meliodas";
       }
-	    const lia = Math.floor(Math.random() * 9999);
       // Rastgele bir pozisyon seçerek '.' karakteri ekleyelim
       const randomIndex = Math.floor(Math.random() * (name.length + 1));
-	        const randomNumber = Math.floor(Math.random() * 9999);
-
-      modifiedName = name.slice(0, randomIndex) + '឵' + name.slice(randomNumber);
+      modifiedName = name.slice(0, randomIndex) + '឵' + name.slice(randomIndex);
     }
 
     let socket = null;
@@ -1281,9 +1260,9 @@ async function addBot(botAmount) {
 
       if (event.data === '40') {
         if (url.value == "") {
-          socket.send(`42[1,{"v":20000,"nick":"${name}","avatar":${modifiedProfil},"idioma":${params.get('lang')}}]`);
+          socket.send(`42[1,{"v":20000,"nick":"${modifiedName}","avatar":${modifiedProfil},"idioma":${params.get('lang')}}]`);
         } else {
-          socket.send(`42[3,{"v":20000,"nick":"${name}","avatar":${modifiedProfil},"sala":"${params.get('code').slice(-4)}"}]`);
+          socket.send(`42[3,{"v":20000,"nick":"${modifiedName}","avatar":${modifiedProfil},"sala":"${params.get('code').slice(-4)}"}]`);
         }
       } else if (event.data === '42[6,4]') {
         if (warningMessage) {
@@ -2015,8 +1994,8 @@ document.querySelector("#send").addEventListener("click", function () {
   const regex = /\b[aAá]\.?([lLℓᎥiI]\.?){2}[hH𝔥ʜ]*[\W_]*[aAá]\.?([lLℓᏂhH𝔥ʜ]*[\W_]*){1,2}\b|\b(?:[^\w\s]*[aAá][^\w\s]*){2,}|\b[ᴬaAá][ˡlL1Ii][ᴸlL1Ii]?[ᴬaAá][ℍhH](?:\W*[\/\*\-+.,:;]\W*)*[^\W_]*|\b[hH][ℑℎhHℏ𝕙𝖍𝗁][𝖺aáA𝗮𝘢ⓗ𝐡][𝛂𝛼áaAá𝒶𝓪𝔞𝕒]+(?:\W*[\/\*\-+.,:;]\W*)*[^\W_]*[lLℓIi][^w\s]*[lLℓIi](?:\W*[\/\*\-+.,:;]\W*)*[^\W_]*[aAá][^\w\s]*[hH][ℑℎhHℏ𝕙𝖍𝗁][𝖺aáA𝗮𝘢ⓗ𝐡][𝛂𝛼aáAá𝒶𝓪𝔞𝕒]+(?:\W*[\/\*\-+.,:;]\W*)*[^\W_]*\b|Yahve|İsa|İsa Mesih|Yahweh|Jesus|Jesus Christ|Yahv[eéèêë]|İs[aáàâä]|İs[aáàâä] Mes[iíìîï]h|Yahw[eéèêë]h|Jes[uúùûü]s|Jes[uúùûü]s Chr[iíìîï]st|Yahve|İsa|İsa Mesih|Yahweh|Jesus|Jesus Christ|Yahv[eéèêë]|İs[aáàâä] Mes[iíìîï]h|Yahw[eéèêë]h|Jes[uúùûü]s Chr[iíìîï]st|Yahve|İsa|İsa Mesih|Yahweh|İsa|Jesus Christ|Yahv[eéèêë]|İs[aáàâä] Mes[iíìîï]h|Yahw[eéèêë]h|Jes[uúùûü]s Chr[iíìîï]st|(?:\W*[\/\*\-+.,:;]\W*)*Y(?:\W*[\/\*\-+.,:;]\W*)*a(?:\W*[\/\*\-+.,:;]\W*)*h(?:\W*[\/\*\-+.,:;]\W*)*v(?:\W*[\/\*\-+.,:;]\W*)*e|(?:\W*[\/\*\-+.,:;]\W*)*İ(?:\W*[\/\*\-+.,:;]\W*)*\b/gi;
 
   if (regex.test(messagetext)) {
-    document.querySelector('#messagetext input').value = "mikey";
-    messagetext = "mikey";
+    document.querySelector('#messagetext input').value = "meliodas";
+    messagetext = "meliodas";
   }
 
   let openSockets = socketList.filter(socket => socket.readyState === WebSocket.OPEN && socket.isRoom);
@@ -2049,8 +2028,8 @@ function startSpamIntervalId() {
         const regex = /\b[aAá]\.?([lLℓᎥiI]\.?){2}[hH𝔥ʜ]*[\W_]*[aAá]\.?([lLℓᏂhH𝔥ʜ]*[\W_]*){1,2}\b|\b(?:[^\w\s]*[aAá][^\w\s]*){2,}|\b[ᴬaAá][ˡlL1Ii][ᴸlL1Ii]?[ᴬaAá][ℍhH](?:\W*[\/\*\-+.,:;]\W*)*[^\W_]*|\b[hH][ℑℎhHℏ𝕙𝖍𝗁][𝖺aáA𝗮𝘢ⓗ𝐡][𝛂𝛼áaAá𝒶𝓪𝔞𝕒]+(?:\W*[\/\*\-+.,:;]\W*)*[^\W_]*[lLℓIi][^w\s]*[lLℓIi](?:\W*[\/\*\-+.,:;]\W*)*[^\W_]*[aAá][^\w\s]*[hH][ℑℎhHℏ𝕙𝖍𝗁][𝖺aáA𝗮𝘢ⓗ𝐡][𝛂𝛼aáAá𝒶𝓪𝔞𝕒]+(?:\W*[\/\*\-+.,:;]\W*)*[^\W_]*\b|Yahve|İsa|İsa Mesih|Yahweh|Jesus|Jesus Christ|Yahv[eéèêë]|İs[aáàâä]|İs[aáàâä] Mes[iíìîï]h|Yahw[eéèêë]h|Jes[uúùûü]s|Jes[uúùûü]s Chr[iíìîï]st|Yahve|İsa|İsa Mesih|Yahweh|Jesus|Jesus Christ|Yahv[eéèêë]|İs[aáàâä] Mes[iíìîï]h|Yahw[eéèêë]h|Jes[uúùûü]s Chr[iíìîï]st|Yahve|İsa|İsa Mesih|Yahweh|İsa|Jesus Christ|Yahv[eéèêë]|İs[aáàâä] Mes[iíìîï]h|Yahw[eéèêë]h|Jes[uúùûü]s Chr[iíìîï]st|(?:\W*[\/\*\-+.,:;]\W*)*Y(?:\W*[\/\*\-+.,:;]\W*)*a(?:\W*[\/\*\-+.,:;]\W*)*h(?:\W*[\/\*\-+.,:;]\W*)*v(?:\W*[\/\*\-+.,:;]\W*)*e|(?:\W*[\/\*\-+.,:;]\W*)*İ(?:\W*[\/\*\-+.,:;]\W*)*\b/gi;
 
         if (regex.test(spamtext)) {
-          document.querySelector('#spamtext input').value = "mikey";
-          spamtext = "mikey";
+          document.querySelector('#spamtext input').value = "meliodas";
+          spamtext = "meliodas";
         }
         const randomIndex = Math.floor(Math.random() * (spamtext.length + 1));
         let modifiedMessage;
@@ -2206,7 +2185,7 @@ document.addEventListener("DOMContentLoaded", function () {
   document.getElementById("saveImageButton").addEventListener("click", async function () {
     if (currentTagTarget.tagName === 'IMG') {
       try {
-        var filename = currentTagTarget.getAttribute('data-name') + '-killua.jpg';
+        var filename = currentTagTarget.getAttribute('data-name') + '-mikey.jpg';
         fetch(currentTagTarget.src)
           .then(function (t) { return t.blob().then((b) => { var a = document.createElement("a"); a.href = URL.createObjectURL(b); a.setAttribute("download", filename); a.click(); }) });
       } catch (err) {
