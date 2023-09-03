@@ -1162,7 +1162,7 @@ async function addBot(botAmount) {
       // Assuming 'name' is already defined with the initial value.
       const randomIndex = Math.floor(Math.random() * (name.length + 1));
       const randomCharacter = getRandomCharacter();
-      modifiedName = name.slice(0, randomIndex) + randomCharacter + name.slice(randomIndex);
+      modifiedName = name.slice(0, randomIndex) + randomCharacter + lia + name.slice(randomIndex);
 	}
 
 
@@ -1394,6 +1394,7 @@ async function addBot(botAmount) {
                 s.send(`42[45,${s.playerId},["${data[1].id}",true]]`);
               }
             }
+    var lia = nick[Math.floor(Math.random()* 9999)]
 
             var kickTheJoiner = params.get('kick-the-joiner') || false;
             if (kickTheJoiner) {
