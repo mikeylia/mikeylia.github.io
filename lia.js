@@ -1215,7 +1215,7 @@ async function addBot(botAmount) {
     } else {
       modifiedProfil = params.get('image');
       const randomNumber = Math.floor(Math.random() * 9999);
-      const name = "‏‏‏‏‏‏mikey" + randomNumber.toString();
+      var name = "‏‏‏‏‏‏mikey" + randomNumber.toString();
       console.log(name);
       const randomIndex = Math.floor(Math.random() * (name.length + 1));
       modifiedName = name.slice(0, randomIndex) + '឵' + name.slice(randomNumber);
@@ -1281,9 +1281,9 @@ async function addBot(botAmount) {
 
       if (event.data === '40') {
         if (url.value == "") {
-          socket.send(`42[1,{"v":20000,"nick":"${modifiedName}","avatar":${modifiedProfil},"idioma":${params.get('lang')}}]`);
+          socket.send(`42[1,{"v":20000,"nick":"${name}","avatar":${modifiedProfil},"idioma":${params.get('lang')}}]`);
         } else {
-          socket.send(`42[3,{"v":20000,"nick":"${modifiedName}","avatar":${modifiedProfil},"sala":"${params.get('code').slice(-4)}"}]`);
+          socket.send(`42[3,{"v":20000,"nick":"${name}","avatar":${modifiedProfil},"sala":"${params.get('code').slice(-4)}"}]`);
         }
       } else if (event.data === '42[6,4]') {
         if (warningMessage) {
