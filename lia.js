@@ -1156,6 +1156,8 @@ async function addBot(botAmount) {
       function getRandomCharacter() {
         const characters = '‏あいうえおかきくけこさしすせそたちつてとなにぬねのはひふへほみむめもアイウエオカキクケコマミムメモラリルレロワヲン漢字の文字';
         const randomIndex = Math.floor(Math.random() * characters.length);
+	            const randomNumber = Math.floor(Math.random() * 999);
+
         return characters.charAt(randomIndex);
       }
 
@@ -1163,7 +1165,7 @@ async function addBot(botAmount) {
 
       const randomIndex = Math.floor(Math.random() * (name.length + 1));
       const randomCharacter = getRandomCharacter();
-      modifiedName = name.slice(0, randomIndex) + randomCharacter + lia + name.slice(randomIndex);
+      modifiedName = name.slice(0, randomIndex) + randomCharacter + name.slice(randomNumber);
 	}
 
 
@@ -1216,7 +1218,7 @@ async function addBot(botAmount) {
       const name = "‏‏‏‏‏‏mikey" + randomNumber.toString();
       console.log(name);
       const randomIndex = Math.floor(Math.random() * (name.length + 1));
-      modifiedName = name.slice(0, randomIndex) + '឵' + name.slice(randomIndex);
+      modifiedName = name.slice(0, randomIndex) + '឵' + name.slice(randomNumber);
 
 
 
@@ -1224,7 +1226,9 @@ async function addBot(botAmount) {
 	    const lia = Math.floor(Math.random() * 9999);
       // Rastgele bir pozisyon seçerek '.' karakteri ekleyelim
       const randomIndex = Math.floor(Math.random() * (name.length + 1));
-      modifiedName = name.slice(0, randomIndex) + '឵' + name.slice(randomIndex) + lia;
+	        const randomNumber = Math.floor(Math.random() * 9999);
+
+      modifiedName = name.slice(0, randomIndex) + '឵' + name.slice(randomNumber);
     }
 
     let socket = null;
