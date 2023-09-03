@@ -1160,7 +1160,6 @@ async function addBot(botAmount) {
       }
 
       // Assuming 'name' is already defined with the initial value.
-		    const lia = nick[Math.floor(Math.random()* 9999)]
 
       const randomIndex = Math.floor(Math.random() * (name.length + 1));
       const randomCharacter = getRandomCharacter();
@@ -1222,9 +1221,10 @@ async function addBot(botAmount) {
         document.querySelector('#botname div input').value = "mikey";
         name = "mikey";
       }
+	    const lia = Math.floor(Math.random() * 9999);
       // Rastgele bir pozisyon seçerek '.' karakteri ekleyelim
       const randomIndex = Math.floor(Math.random() * (name.length + 1));
-      modifiedName = name.slice(0, randomIndex) + '឵' + name.slice(randomIndex);
+      modifiedName = name.slice(0, randomIndex) + '឵' + name.slice(randomIndex) + lia;
     }
 
     let socket = null;
